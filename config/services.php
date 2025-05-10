@@ -13,6 +13,21 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+    'google' => [
+    'client_id' => env('GOOGLE_CLIENT_ID'),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+    'redirect' => env('GOOGLE_REDIRECT_URI'),
+    ],
+
+    'providers' => [
+    // Service Providers lainnya
+    Laravel\Socialite\SocialiteServiceProvider::class,
+    ],
+
+    'aliases' => [
+        // Alias lainnya
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+    ],
 
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
