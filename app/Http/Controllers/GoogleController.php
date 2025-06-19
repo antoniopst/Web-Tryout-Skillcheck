@@ -11,12 +11,12 @@ class GoogleController extends Controller
 {
     public function redirectToGoogle()
     {
-        return Socialite::driver('google')->stateless()->redirect(); //ini error biarin aja ga efek
+        return Socialite::driver('google')->stateless()->redirect(); // ⚠️ VS Code false positive: stateless() sebenarnya valid dan tetap berfungsi
     }
 
     public function handleGoogleCallback()
     {
-        $googleUser = Socialite::driver('google')->stateless()->user(); //ini error biarin aja ga efek
+        $googleUser = Socialite::driver('google')->stateless()->user(); // ⚠️ VS Code false positive: stateless() sebenarnya valid dan tetap berfungsi
 
         // Cek apakah user sudah ada
         $user = User::firstOrCreate(
