@@ -8,27 +8,11 @@
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-  <!-- Header Start -->
-  <header class="bg-teal-500 fixed top-0 left-0 w-full z-50">
-    <div class="container max-w-screen-xl mx-auto px-5">
-      <div class="flex justify-between py-4 items-center">
-        <h1 class="text-3xl font-bold text-white">skillcheck.</h1>
-        <ul class="flex gap-10">
-          <li><a href="#" class="text-xl text-white font-medium hover:text-slate-800">Dashboard</a></li>
-          <li><a href="#" class="text-xl text-white font-medium hover:text-slate-800">Home</a></li>
-          <li><a href="#" class="text-xl text-white font-medium hover:text-slate-800">About</a></li>
-          <li><a href="#" class="text-xl text-white font-medium hover:text-slate-800">Tryout</a></li>
-        </ul>
-        <a href="{{ route('login') }}" class="bg-white px-8 py-2 rounded-2xl hover:bg-slate-800">
-          <span class="text-lg font-medium text-teal-500">Login</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- Header End -->
+
+    @extends('layouts.main')
 
   <!-- Register Section Start -->
-  <section class="pt-48 bg-slate-50 min-h-screen flex items-center">
+  <section class="pt-32 pb-22 bg-slate-50 min-h-screen flex items-center">
     <div class="container max-w-screen-xl mx-auto flex justify-center items-center">
       <div class="flex w-3/4 rounded-3xl shadow-2xl shadow-slate-800 overflow-hidden">
         <div class="sm:w-1/2 hidden sm:flex bg-slate-800 p-10 flex-col items-center">

@@ -8,26 +8,11 @@
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="bg-teal-500 fixed top-0 left-0 w-full z-50">
-      <div class="container max-w-screen-xl mx-auto px-5">
-        <div class="flex justify-between py-4 items-center">
-          <h1 class="text-3xl font-bold text-white">skillcheck.</h1>
-          <ul class="flex gap-10">
-            <li class="group"><a href="#" class="text-xl text-white font-medium">Dashboard</a></li>
-            <li class="group"><a href="#" class="text-xl text-white font-medium">Home</a></li>
-            <li class="group"><a href="#" class="text-xl text-white font-medium">About</a></li>
-            <li class="group"><a href="#" class="text-xl text-white font-medium">Tryout</a></li>
-          </ul>
-          <div class="bg-white px-8 py-2 hover:bg-slate-800 rounded-2xl">
-            <span class="text-lg font-medium text-teal-500">Login</span>
-          </div>
-        </div>
-      </div>
-    </header>
+
+    @extends('layouts.main')
 
     <!-- Login Section -->
-    <section id="login" class="pt-28 bg-teal-50">
+    <section id="login" class="pt-32 pb-22 bg-teal-50">
       <div class="container max-w-screen-xl mx-auto h-[100vh] flex justify-center items-center">
         <div class="flex w-3/4 rounded-3xl shadow-2xl shadow-teal-500 overflow-hidden">
           <div class="sm:w-1/2 hidden bg-teal-500 p-10 sm:flex flex-col justify-center items-center">
@@ -96,6 +81,13 @@
               </div>
             </form>
 
+                @if (Route::has('password.request'))
+            <div class="text-center mt-4">
+                <a href="{{ route('password.request') }}" class="text-sm text-teal-500 hover:underline">
+                Lupa kata sandi?
+                </a>
+            </div>
+            @endif
             <!-- Google Login Button -->
             <div class="flex items-center justify-center w-full mt-6">
                 <a href="{{ route('google.login') }}"
