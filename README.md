@@ -1,61 +1,145 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# WEB-TRYOUT-SKILLCHECK
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+*Empower Learning Through Instant Skill Validation*
 
-## About Laravel
+[![Last Commit](https://img.shields.io/github/last-commit/antoniopst/Web-Tryout-Skillcheck?style=flat-square)](https://github.com/antoniopst/Web-Tryout-Skillcheck/commits/main)
+[![Language](https://img.shields.io/github/languages/top/antoniopst/Web-Tryout-Skillcheck?style=flat-square)](https://github.com/antoniopst/Web-Tryout-Skillcheck)
+[![Languages](https://img.shields.io/github/languages/count/antoniopst/Web-Tryout-Skillcheck?style=flat-square)](https://github.com/antoniopst/Web-Tryout-Skillcheck)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Built with the tools and technologies:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Autoprefixer](https://img.shields.io/badge/Autoprefixer-DD3B00?style=for-the-badge&logo=autoprefixer&logoColor=white)
+![PostCSS](https://img.shields.io/badge/PostCSS-DD3B00?style=for-the-badge&logo=postcss&logoColor=white)
+![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![XML](https://img.shields.io/badge/XML-007ACC?style=for-the-badge&logo=xml&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0F6?style=for-the-badge&logo=alpine.js&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Livewire](https://img.shields.io/badge/Livewire-12A5C7?style=for-the-badge&logo=livewire&logoColor=white)
+![Blade](https://img.shields.io/badge/Blade-F4645F?style=for-the-badge&logo=laravel&logoColor=white)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Table of Contents
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* [Overview](#overview)
+* [Getting Started](#getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Testing](#testing)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Overview
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Web-Tryout-Skillcheck is an all-in-one developer toolset for building interactive, role-based educational platforms. It combines a modern frontend stack with Laravel's robust backend, enabling seamless content management, user authentication, and real-time interactions.
 
-### Premium Partners
+### Why Web-Tryout-Skillcheck?
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+This project simplifies the development of scalable, secure online assessment systems. The core features include:
 
-## Contributing
+* **⚡ Modern Frontend Setup:** Utilizes Vite, Tailwind CSS, and Alpine.js for fast, responsive UI development.
+* **🔑 Role-Based Access Control:** Implements dynamic user and permission management with Livewire.
+* **📄 Content Management:** Offers admin dashboards for questions, categories, subjects, and levels.
+* **💡 Reusable Components:** Provides Blade components for consistent, maintainable UI.
+* **✏️ Automated Testing & Export:** Supports automated tests and data exports for efficient workflows.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Getting Started
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-## Security Vulnerabilities
+### Prerequisites
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+This project requires the following dependencies:
 
-## License
+* **Programming Language:** PHP (specific version recommended if any, e.g., PHP 8.1+)
+* **Package Manager:** Npm, Composer
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Installation
+
+Build Web-Tryout-Skillcheck from the source and install dependencies:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/antoniopst/Web-Tryout-Skillcheck](https://github.com/antoniopst/Web-Tryout-Skillcheck)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Web-Tryout-Skillcheck
+    ```
+3.  **Install the dependencies:**
+
+    * Using `npm`:
+        ```bash
+        npm install
+        ```
+    * Using `composer`:
+        ```bash
+        composer install
+        ```
+4.  **Configure Environment (if applicable):**
+    * Create a `.env` file (e.g., `cp .env.example .env`).
+    * Adjust database settings and other environment variables as needed.
+5.  **Run Database Migrations (if applicable):**
+    ```bash
+    php artisan migrate
+    ```
+
+---
+
+## Usage
+
+Run the project with:
+
+* Using `npm`:
+    ```bash
+    npm start
+    ```
+    *(Note: For Vite, `npm run dev` is often used for development, `npm start` might be a custom script. Please verify the actual command in `package.json`.)*
+
+* Using `composer`:
+    ```bash
+    php artisan serve
+    ```
+    *(Note: `{entrypoint}` is often `artisan serve` for Laravel projects to start the local development server.)*
+
+After running the commands, access the application in your web browser (typically `http://localhost:5173` for frontend and `http://localhost:8000` for backend if using `php artisan serve`).
+
+---
+
+## Testing
+
+Web-tryout-skillcheck uses the **PHPUnit** (for PHP) and **Jest** (or similar, for JS) test framework. Run the test suite with:
+
+* Using `npm`:
+    ```bash
+    npm test
+    ```
+* Using `composer`:
+    ```bash
+    vendor/bin/phpunit
+    ```
+
+---
+
+## Contact
+
+If you have any questions, suggestions, or would like to discuss this project further, feel free to reach out to:
+
+* **Antonio Parlindungan Simatupang**
+* Email: [antoniosimatupang@gmail.com]
+* GitHub: [https://github.com/antoniopst]
