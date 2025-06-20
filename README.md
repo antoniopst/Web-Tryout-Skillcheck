@@ -36,8 +36,6 @@ Built with the tools and technologies:
     * [Installation](#installation)
     * [Usage](#usage)
     * [Testing](#testing)
-* [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
 
 ---
