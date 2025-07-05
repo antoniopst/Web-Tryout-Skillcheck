@@ -8,8 +8,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChooseRoleController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\UserDashboardController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\SuperadminController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -71,6 +69,10 @@ Route::middleware(['auth'])->group(function () {
     Route::view('dashboard/role', 'dashboard.role.index')
         ->middleware('role_selected.permission:Role Access')
         ->name('dashboard.role.index');
+
+    Route::view('dashboard/history', 'dashboard.history.index')
+        ->middleware('role_selected.permission:History Access')
+        ->name('dashboard.history');
 
     Route::view('dashboard/permission', 'dashboard.permission.index')
         ->middleware('role_selected.permission:Permission Access')

@@ -7,14 +7,14 @@
             <div class="row mb-2">
             <div class="col-sm-6">
                 <h1>
-                    <i class="fas fa-question mr-1"></i>
+                    <i class="fas fa-question-circle mr-1"></i>
                     {{ $title }}
                 </h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#"><i class="fas fa-home mr-1"></i> Dashboard</a></li>
-                <li class="breadcrumb-item active"><i class="fas fa-question mr-1"></i>{{ $title }}</li>
+                <li class="breadcrumb-item active"><i class="fas fa-question-circle mr-1"></i>{{ $title }}</li>
                 </ol>
             </div>
             </div>
@@ -30,7 +30,7 @@
                     <div>
                         <button wire:click="create" class="btn btn-md btn-primary" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus mr-1"></i>Tambah Data</button>
                     </div>
-                    
+
                     <div class="btn-group dropleft">
                         <button type="button" class="btn btn-sm btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-file-import mr-1"></i>
@@ -42,8 +42,8 @@
                                     <div class="mb-3">
                                         <label for="file" class="form-label">Pilih File Excel</label>
                                         <input type="file" wire:model="file" class="form-control" id="file" accept=".xlsx,.xls">
-                                        @error('file') 
-                                            <div class="text-danger small mt-1">{{ $message }}</div> 
+                                        @error('file')
+                                            <div class="text-danger small mt-1">{{ $message }}</div>
                                         @enderror
                                     </div>
 
@@ -173,7 +173,7 @@
         {{-- Delete Modal --}}
         @include('livewire.admin.question.delete')
         {{-- Delete Modal --}}
-        
+
         {{-- Close Delete Modal --}}
         @script
             <script>

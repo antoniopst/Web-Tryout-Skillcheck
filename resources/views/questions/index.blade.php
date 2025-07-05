@@ -46,7 +46,7 @@
                 </span>
                 <div class="absolute hidden flex-col items-start bg-red-50 rounded-2xl border border-red-800 w-56 py-2 px-4 right-0 top-8 z-20 shadow-xl transition-all duration-200" id="score-container">
                   <h6 class="font-medium text-shadow-sm text-red-800">Benar = +1 Point</h6>
-                  <h6 class="font-medium text-shadow-sm text-red-800">Salah = -1 Point</h6>
+                  <h6 class="font-medium text-shadow-sm text-red-800">Salah = 0 Point</h6>
                   <h6 class="font-medium text-shadow-sm text-red-800">Tidak Jawab = -1 Point</h6>
                 </div>
               </div>
@@ -178,13 +178,12 @@
         if(answer === 'BENAR'){
           score += 1;
           correct += 1;
-        } else{
+        } else if(!answer){
           score -= 1;
-          if(!answer){
-            nul += 1;
-          } else{
-            wrong += 1;
-          }
+          nul += 1;
+        } else{
+          // Salah: skor tidak berubah
+          wrong += 1;
         }
       })
 

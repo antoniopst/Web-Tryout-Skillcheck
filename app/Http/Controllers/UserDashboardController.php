@@ -11,8 +11,8 @@ class UserDashboardController extends Controller
 {
     public function index()
     {
-        $user = auth()->user();
-        $histories = $user->histories; // asumsi relasi di model User sudah dibuat
+        $user = Auth::user();
+        $histories = $user->histories;  // Ambil semua riwayat yang terkait dengan user yang sedang login
 
         return view('dashboard', compact('histories'));
     }
