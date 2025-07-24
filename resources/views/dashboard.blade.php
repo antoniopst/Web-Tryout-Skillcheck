@@ -31,20 +31,39 @@
           <thead class="bg-gradient-to-r from-teal-500 to-teal-400 text-white">
             <tr>
               <th class="px-4 py-3 text-left font-semibold">Tanggal</th>
-              <th class="px-4 py-3 text-left font-semibold">Tryout</th>
+              <th class="px-4 py-3 text-left font-semibold">Tingkat</th>
+              <th class="px-4 py-3 text-left font-semibold">Mata Pelajaran</th>
+              <th class="px-4 py-3 text-left font-semibold">Total Soal</th>
               <th class="px-4 py-3 text-left font-semibold">Skor</th>
+              <th class="px-4 py-3 text-left font-semibold">Persentase</th>
+              <th class="px-4 py-3 text-left font-semibold">Sertifikat</th>
             </tr>
           </thead>
           <tbody>
             @foreach($histories as $history)
               <tr class="border-b hover:bg-teal-50 transition">
                 <td class="px-4 py-3">{{ $history->created_at->format('d M Y') }}</td>
-                <td class="px-4 py-3">{{ $history->title ?? '-' }}</td>
+                <td class="px-4 py-3">{{ $history->level->name ?? '-' }}</td>
+                <td class="px-4 py-3">{{ $history->subject->name ?? '-' }}</td>
+                <td class="px-4 py-3">{{ $history->total_questions ?? '-' }}</td>
                 <td class="px-4 py-3">
                   <span class="inline-block px-3 py-1 rounded-full font-bold
                     {{ ($history->score ?? 0) >= 80 ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700' }}">
                     {{ $history->score ?? '-' }}
                   </span>
+                </td>
+                <td class="px-4 py-3">{{ $history->persentage_score ?? '-' }}%</td>
+                <td class="px-4 py-3">
+                  @if (!empty($history->certificate_url))
+                    <a href="{{ asset('storage/' . $history->certificate_url) }}" class="inline-flex items-center px-3 py-1 bg-teal-500 text-white rounded hover:bg-teal-600 transition text-xs" target="_blank">
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/>
+                      </svg>
+                      Unduh
+                    </a>
+                  @else
+                    <span class="inline-block px-2 py-1 bg-slate-200 text-slate-500 rounded text-xs">-</span>
+                  @endif
                 </td>
               </tr>
             @endforeach

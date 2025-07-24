@@ -8,7 +8,6 @@ use App\Models\Question;
 use App\Models\Subject;
 use App\Models\User;
 use Illuminate\Support\Str;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
@@ -20,16 +19,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // Buat user baru atau ambil yang sudah ada
-    $admin = User::firstOrCreate(
-        ['email' => 'admin@example.com'],
-        [
-            'name' => 'Admin',
-            'password' => bcrypt('password') // pastikan pakai hash
-        ]
-    );
+        // Jalankan RoleSeeder dulu
+        $this->call([
+            RoleSeeder::class,
+        ]);
 
-    // Assign role ke user (role-nya sudah ada di tabel `roles`)
-        $admin->assignRole('admin');
-}
+        // Buat user baru atau ambil yang sudah ada
+        $superadmin = User::firstOrCreate(
+            ['email' => 'superadmin@example.com'],
+            [
+                'name' => 'Superadmin',
+                'password' => bcrypt('password')
+            ]
+        );
+
+        // Assign role ke user
+       if (!$superadmin->hasRole('superadmin')) {
+            $superadmin->assignRole('superadmin');
+        }
+    }
 }
