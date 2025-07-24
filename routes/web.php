@@ -34,16 +34,7 @@ Route::get('/question-lists', [LevelController::class, 'index'])->name('question
 
 Route::get('/question/{level:slug}/{subject:slug}', [SubjectController::class, 'index']);
 
-Route::get('/cek-role', function () {
-    $user = auth()->user();
-    if (!$user) {
-        return response()->json(['message' => 'Belum login']);
-    }
-    return response()->json([
-        'name' => $user->name,
-        'roles' => $user->getRoleNames(), // gunakan Spatie!
-    ]);
-})->middleware('auth');
+
 
 Route::post('/histories', [HistoryController::class, 'store']);
 
